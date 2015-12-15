@@ -1,0 +1,21 @@
+.box1 {
+    background-color:darkcyan;
+    height: 100px;
+}
+.box2 {
+    background-color:darkcyan;
+    height: 100px;
+}
+.box3 {
+    background-color:#fa5;
+    height: 100px;
+}
+.box4 {
+    background-color:darkcyan;
+    height: 100px;
+}
+@media (max-width:800px)
+{
+    .box1 { display:none;
+    }
+}
