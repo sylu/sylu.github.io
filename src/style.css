@@ -1,16 +1,141 @@
-html,
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
-    width: 100%;
-    height: 100%;
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
 }
 
-.wantstofly {
-    background: #dad;
-    width: 77px;
-    height: 77px;
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+body > .container {
+  padding: 0 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+
+
+.background-image-1 {
+    background:url('img/3-copy.jpg');
+    height: 300px;
+        background-size: cover;
+}
+.background-image-2 {
+    background:url('img/6(1).jpg');
+    height: 300px;
+        background-size: cover;
+}
+.background-image-3 {
+    background:url('img/3-copy.jpg');
+    height: 300px;
+        background-size: cover;
+}
+.background-image-4 {
+    background:url('img/3-copy.jpg');
+    height: 300px;
+        background-size: cover;
+}
+
+.gallerybox {
+    position: relative;
+}
+.gallerybox p{
+    display: none;
+}
+
+.tytul{
     position: absolute;
-    top: 400px;
-    left: 400px;
+    top:250px;
+    width: 100%;
+    left:0;
+    font-size: 70px;
+    color:white;
+}
+.left {
+    float:left;
+    margin: 15px;
+}
+
+.znacznik {
+
+  float:right;
+   
+  
+}
     
+
+.gallerybox:hover p{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12,189,195,0.5);
+    text-align: center;
+    color: white;
+    font-size: 15em;
+}
+
+.footer-inside {
+    background:url('img/tlo.jpg');
+    color: white;
+}
+.white {
+    color:white;
     
+}
+.czlonk_wys div{
+    height:250px;
+}
+.kursywa {
+    font-style: italic;
+}
+
+.blue {
+    color: rgba(12,189,195,1);
+}
+
+.blue-tlo {
+    background-color: rgba(12,189,195,1);
+}
+.blue-tlo1 {
+    background-color: rgba(23,151,152,1);
+}
+
+.zdjecie {
+    width: 100%;
+}
+
+.logo {
+    position: fixed;
+}
+
+.navbar-fixed-top {
+    background: white;
 }
