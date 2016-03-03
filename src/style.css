@@ -61,10 +61,15 @@ code {
         background-size: cover;
 }
 
+.nagl {
+
+    margin-top:210px;
+}
 .gallerybox {
     position: relative;
 }
-.gallerybox p{
+.gallerybox p,
+.gallerybox a{
     display: none;
 }
 
@@ -76,20 +81,42 @@ code {
     font-size: 70px;
     color:white;
 }
-.left {
-    float:left;
-    margin: 15px;
+
+.podtytul{
+    position: relative;
+    top:12px;
+    width: 100%;
+    left:0;
+    font-size: 70px;
+    color:white;
 }
 
-.znacznik {
+.carousel img {
+    width: 100%;
+}
 
+.podt {
+    font-size: 30px;
+    margin-top:-90px;
+}
+.znacznik {
+    position: relative;
   float:right;
    
   
 }
-    
+.znacznik:hover .pokazmapa {
+    position: absolute;
+    display: block!important;
+}
+    .kreska{
 
-.gallerybox:hover p{
+      margin-top:-120px;
+        margin-left: 13px;
+}
+
+.gallerybox:hover p,
+.gallerybox:hover a {
     display: block;
     position: absolute;
     top:0;
@@ -102,6 +129,13 @@ code {
     font-size: 15em;
 }
 
+.link-bez-podkr:hover {
+    text-decoration:none
+}
+
+.box {
+    height:200px;
+}
 .footer-inside {
     background:url('img/tlo.jpg');
     color: white;
@@ -130,7 +164,9 @@ code {
 
 .zdjecie {
     width: 100%;
+    height: 70%;
 }
+
 
 .logo {
     position: fixed;
@@ -138,4 +174,8 @@ code {
 
 .navbar-fixed-top {
     background: white;
+}
+
+.zaokraglone {
+    border-radius: 10px;
 }
