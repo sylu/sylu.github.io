@@ -35,7 +35,7 @@
             <li><a href="index.html">Główna</a></li>
             <li><a href="czlonkowie.html">Członkowie</a></li>
             <li class="active"><a href="projekty.html">Projekty</a></li>
-                      <li><a href="#kontakt">Kontakt</a></li>
+                      <li><a id="kontakt3" href="#kontakt">Kontakt</a></li>
 
           </ul>
         </div><!--/.nav-collapse -->
@@ -44,8 +44,8 @@
 
     <!-- Begin page content -->
     <div class="container">
-  <div class="row">
-          <div class="tytul  text-center">  
+  <div class="row" >
+          <div class="tytul  text-center" >  
               <p>Projekty</p> 
             <img class="kreska" src="img/biala_kreska.png">
               <br>
@@ -62,14 +62,14 @@
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 background-image-2 gallerybox"  style="color:white">
-            <h1 class="nagl">MODERNIZACJA<BR/>OCZYSZCZALNI</h1>
+            <h1 class="nagl" style="margin-top:168px">MODERNIZACJA<BR/>OCZYSZCZALNI ŚCIEKÓW</h1>
               Czerwonak
-              <a href="pojedynczy.html" class="link-bez-podkr">+</a>
+              <a href="pojedynczy1.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 background-image-3 gallerybox"  style="color:white">
             <h1 class="nagl">KŁADKA<BR/>NA CHWALISZEWIE</h1>
               Projekt 2016
-              <a href="pojedynczy.html" class="link-bez-podkr">+</a>
+              <a href="pojedynczy2.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 hidden-lg hidden-md background-image-4 gallerybox"  style="color:white">
             <h1 class="nagl">OSIEDLE<BR/>PORTOWO</h1>
@@ -80,9 +80,8 @@
         <br/>
               <div class="row">
           <div class="col-md-4 col-xs-6 background-image-5 gallerybox"  style="color:white">
-            <h1 class="nagl">24</h1>
-              Gminy 
-              i instytucje
+            <h1 class="nagl">PARK PRZY STAREJ GAZOWNI</h1>
+               W trakcie realizacji
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 background-image-6 gallerybox"  style="color:white">
@@ -90,25 +89,22 @@
               Wakacje nad rzeką
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
-          <div class="col-md-4 col-xs-6 background-image-7 gallerybox"  style="color:white">
-            <h1 class="nagl">24</h1>
-              Gminy 
-              i instytucje
+          <div class="col-md-4 col-xs-6 background-image-7 gallerybox"  style="color:black">
+              <h1 class="nagl"  ><b> NOWY INWESTOR AQUANET </b></h1>
+              Projekt 2018
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 hidden-lg hidden-md background-image-8 gallerybox"  style="color:white">
-            <h1 class="nagl">24</h1>
-              Gminy 
-              i instytucje
+            <h1 class="nagl">BUDOWA NOWEJ MARINY</h1>
+             Poznań
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
         </div>
         <br/>
               <div class="row">
           <div class="col-md-4 col-xs-6 background-image-9 gallerybox"  style="color:white">
-            <h1 class="nagl">24</h1>
-              Gminy 
-              i instytucje
+            <h1 class="nagl">PRZYSTAŃ <br/>KAJAKOWA</h1>
+             Puszczykowo
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 background-image-10 gallerybox"  style="color:white">
@@ -116,10 +112,9 @@
               Inwestycja 2017
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
-          <div class="col-md-4 col-xs-6 background-image-11 gallerybox"  style="color:white">
-            <h1 class="nagl">24</h1>
-              Gminy 
-              i instytucje
+          <div class="col-md-4 col-xs-6 background-image-11 gallerybox"  style="color:black">
+              <h1 class="nagl" style="margin-top:231px"><b>TURYSTYKA</b></h1>
+             Plany rozwoju 2030
               <a href="pojedynczy.html" class="link-bez-podkr">+</a>
             </div>
           <div class="col-md-4 col-xs-6 hidden-lg hidden-md background-image-12 gallerybox"  style="color:white">
@@ -179,6 +174,14 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>
+          $('#kontakt3').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+      </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>

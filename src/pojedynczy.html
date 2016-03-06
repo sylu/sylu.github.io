@@ -9,6 +9,12 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
+       <script>
+    function goToURL() {
+      location.href = 'projekty.html';
+
+    }
+  </script>
 
     <title>Wielkopolski Klaster Rzeczny</title>
 
@@ -34,8 +40,11 @@
       <ul class="nav navbar-nav navbar-right">
             <li><a href="index.html">Główna</a></li>
             <li><a href="czlonkowie.html">Członkowie</a></li>
-            <li class="active"><a href="projekty.html">Projekty</a></li>
-                      <li><a href="#kontakt">Kontakt</a></li>
+            <li ><a href="projekty.html">Projekty</a></li>
+                      <li><a id="kontakt3" href="#kontakt">Kontakt</a></li>
+           
+           
+          </ul>
 
           </ul>
         </div><!--/.nav-collapse -->
@@ -92,16 +101,26 @@
               <div class="podt">Inwestycja 2017</div>
             </div>
             </div>
+          
+
         </div>
+        <button type="button" class="btn btn-default row" aria-label="Left Align" onclick="goToURL(); return false;">
+       <span class="glyphicon glyphicon-chevron-left" aria-hidden="true">  </span>
+       Powrót
+       </button>
+
+         
         <div class="row" style="margin: auto 10%; line-height:28px; font-size:16px">
+          
             <br/><br/>
 
-            <p align="justify">
-                Rok 2017 przyniesie nowy środek transportu. Do dyspozycji mieszkańców i turystów będą trzy jednostki: "Bajka", "Biała Dama" i "Karolinka". Statki kursować będą codziennie od 10:00 do 19:00 (rejsy co 15-30 minut). Rejsy odbywać się będą w kierunku Czerwonaka (do Karolina) i w kierunku Lubonia (do Starołęki). Każdy trwa ok. 70 minut, a bilety dostępne będą w promocyjnych cenach w przedziale od 8 do 13 zł.</p>
+            <p align="justify"><b>
+                Rok 2017 przyniesie nowy środek transportu. Do dyspozycji mieszkańców i turystów będą trzy jednostki: "Bajka", "Biała Dama" i "Karolinka". Statki kursować będą codziennie od 10:00 do 19:00 (rejsy co 15-30 minut). Rejsy odbywać się będą w kierunku Czerwonaka (do Karolina) i w kierunku Lubonia (do Starołęki). Każdy trwa ok. 70 minut, a bilety dostępne będą w promocyjnych cenach w przedziale od 8 do 13 zł.</b></p>
 <p align="justify">
+   
   	Dzięki dofinansowaniu Miasta, każdego dnia, od maja aż do końca sierpnia, organizowane będą dwa rejsy w wyjątkowo niskiej cenie: bilety ulgowe 5 zł/os., bilety normalne 10 zł/os. Rejsy te będą się odbywać o 10:00 w kierunku Starołęki i o 13:30 w kierunku Czerwonaka. Minimalna liczba pasażerów wymagana dla rozpoczęcia rejsu to 10 osób. Każdy ze statków mieści do 38 osób. Dodatkowo Polskie Linie Kolejowe przebudowując wiadukt kolejowy nad Wartą na Starołęce rozebrało zabytkowe kratownice mostu wraz z kładką z której korzystali okoliczni mieszkańcy. Wtedy władze miasta włączyły się w tę kwestię by jednak kładkę udało się przywrócić, po ponad roku rozmów teraz nadszedł czas finalizację spraw. - Udało się porozumieć z PKP PLK, aby powstała przeprawa na Starołęce o szerokości 1,5 metra - mówi Maciej Wudarski, zastępca prezydenta Poznania. - Ona powstanie do końca tego roku, będzie miała na razie charakter techniczny, do okresu letniego chcemy doprowadzić do tej kładki chodniki, drogę rowerową oraz wybudować oświetlenie - zapowiedział Wudarski. Kładka za względu na swoją szerokość nie będzie droga rowerową, więc rowery będzie trzeba przeprowadzać.</p>
-<p align="justify">
-	Pozostał jednak problem z zabytkowymi przęsłami, Miejska Konserwator Zabytków, chciała, aby PKP przewróciło je na pierwotne miejsce, tak by zabytek udało się ochronić. Władze miasta zaproponowały jednak inne rozwiązanie. </p>
+<p align="justify"><b>
+	Pozostał jednak problem z zabytkowymi przęsłami, Miejska Konserwator Zabytków, chciała, aby PKP przewróciło je na pierwotne miejsce, tak by zabytek udało się ochronić. Władze miasta zaproponowały jednak inne rozwiązanie. </b></p>
 <p align="justify">
 	 Zabytkowe przęsła będę wykorzystane do wybudowania zupełnie nowej przeprawy nad Wartą. Będzie to kładka pieszo-rowerowa, która połączy Chwaliszewo, w ciągu ul. Ewangelickiej, poprzez Zagórze na Ostrowie Tumskim, aż do kampusu Politechniki Poznańskiej u wylotu ul. Berdychowo.</p></div>
     </div>
@@ -154,6 +173,14 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+          $('#kontakt3').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 500);
+    return false;
+});
+      </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </body>
 </html>
