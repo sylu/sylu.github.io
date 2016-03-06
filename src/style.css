@@ -144,12 +144,12 @@ p {
 
 .carousel img {
     width: 100%;
-    tex
+  
 }
 
 .podt {
     font-size: 30px;
-    margin-top:-90px;
+    margin-top:-90px !important;
 }
 .znacznik {
     position: relative;
@@ -167,7 +167,9 @@ p {
     .kreska{
 
       margin-top:-103px;
-        margin-left: 18px;
+        height: 1.9vw;
+    min-height: 12px;
+       
 }
 
 
@@ -190,7 +192,7 @@ p {
 }
 
 .box {
-    height:30vmin;
+    height:33vmin;
     
 }
 .footer-inside {
